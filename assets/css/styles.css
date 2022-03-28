@@ -1,0 +1,67 @@
+/*=============== FONTS ===============*/
+@import url("");
+
+@font-face {
+  font-family: "font-1";
+  src: url();
+}
+
+@font-face {
+  font-family: "font-2";
+  src: url();
+}
+
+@font-face {
+  font-family: "font-3";
+  src: url();
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --color1: ;
+  --color2: ;
+  --color3: ;
+  --color4: ;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  background-color: var(--color3);
+}
+
+body {
+  font-family: "font-1";
+  font-size: 1rem;
+  color: var(--color1);
+  background-color: var(--color2);
+}
+
+/*=============== HEADER ===============*/
+
+/*=============== MAIN ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== RESPONSIVE ===============*/
+@media (min-width: 1441px) {
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+@media (min-width: 425px) and (max-width: 767px) {
+}
+@media (min-width: 375px) and (max-width: 424px) {
+}
+@media (max-width: 374px) {
+}
