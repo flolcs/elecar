@@ -3,25 +3,25 @@
 
 @font-face {
   font-family: "font-1";
-  src: url();
+  src: url(../fonts/Exo-Medium.ttf);
 }
 
 @font-face {
   font-family: "font-2";
-  src: url();
+  src: url(../fonts/Exo-Regular.ttf);
 }
 
 @font-face {
   font-family: "font-3";
-  src: url();
+  src: url(../fonts/Exo-SemiBold.ttf);
 }
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --color1: ;
-  --color2: ;
-  --color3: ;
-  --color4: ;
+  --color1: #4178dc;
+  --color2: #f1f2f3;
+  --color3: #babec4;
+  --color4: #888b91;
 }
 
 /*=============== BASE ===============*/
@@ -42,13 +42,183 @@ html {
 body {
   font-family: "font-1";
   font-size: 1rem;
-  color: var(--color1);
-  background-color: var(--color2);
+  color: var(--color2);
+  background-color: black;
 }
 
 /*=============== HEADER ===============*/
+/*=============== TOP-HEADER ===============*/
+header {
+  height: 100vh;
+}
+
+#top-header {
+  height: 5vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home--compagny {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#home--favicon {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 2px;
+}
+
+#home--elecar {
+  padding-left: 5px;
+}
+
+nav {
+  width: 40%;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+/*=============== MAIN HEADER ===============*/
+#main-header {
+  margin-left: 25vw;
+  margin-right: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  margin-top: 5vh;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "font-3";
+}
+
+#home--divCarMission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+}
+
+#home--divElectricCar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#home--carMissionE {
+  font-size: 1.2rem;
+  font-family: "font-3";
+}
+
+#home--electricCar {
+  font-size: 0.8rem;
+  color: var(--color4);
+}
+
+.ri-flashlight-fill {
+  color: var(--color1);
+}
+
+#home--imgCar {
+  width: 100%;
+  height: auto;
+}
+
+#home--specifications {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#home--caracteristique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+.ri-temp-cold-line {
+  color: var(--color4);
+}
+
+.ri-dashboard-3-line {
+  color: var(--color4);
+}
+
+#flash2 {
+  color: var(--color4);
+}
+
+#home--carNumber {
+  font-size: 1.4rem;
+  color: var(--color3);
+}
+
+#home--carName {
+  font-size: 0.5rem;
+  color: var(--color4);
+}
+
+#home--start {
+  text-decoration: none;
+  color: var(--color2);
+  height: 85px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: solid 2px var(--color1);
+  box-shadow: 0px 0px 15px 3px var(--color1);
+  font-size: 0.8rem;
+}
+
+#home--start::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: solid 2px var(--color1);
+  box-shadow: 0px 0px 10px 0px var(--color1);
+}
 
 /*=============== MAIN ===============*/
+/*=============== ABOUT ===============*/
+#about {
+  height: 100vh;
+}
+
+/*=============== POPULAR===============*/
+
+/*=============== FEATURED ===============*/
 
 /*=============== FOOTER ===============*/
 
