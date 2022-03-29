@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
     <div id="top-page">
         <div id="home--compagny">
@@ -17,6 +19,18 @@
         </div>
         <nav>
             <ul id="menu">
+                <li class="home active"><a href="#home">Home</a></li>
+                <li class="about"><a href="#about">About</a></li>
+                <li class="popular"><a href="#popular">Popular</a></li>
+                <li class="featured"><a href="#featured">Featured</a></li>
+            </ul>
+            <div id="btn-menu">
+                <i class="ri-menu-line"></i>
+            </div>
+            <div id="btn-close">
+                <i class="ri-close-line"></i>
+            </div>
+            <ul id="sous-menu">
                 <li class="home active"><a href="#home">Home</a></li>
                 <li class="about"><a href="#about">About</a></li>
                 <li class="popular"><a href="#popular">Popular</a></li>
@@ -58,7 +72,25 @@
         </section>
     </header>
     <main>
-        <section id="about"></section>
+        <section id="about">
+            <div id="about--container1">
+                <img id="about--img" src="./assets/img/about.png" alt="interior">
+                <div id="about--supercharges">
+                    <span id="about--nbSupercharges">2.500+</span>
+                    <span id="about--descriptionSupercharges">Supercharges placed along popular routes</span>
+                </div>
+            </div>
+            <div id="about--container2">
+                <h1>Machines With Future Technology</h1>
+                <p>See the future with high-performance electric cars produced by 
+                    renowned brands. They feature futuristic builds and designs with 
+                    new and innovative platforms that last a long time.</p>
+                <button id="about--btn">Know more</button>
+            </div>
+            <div id="about--container3">
+                <h1>Choose Your Electric Car <br> Of The Porsche Brand</h1>
+            </div>
+        </section>
         <section id="popular"></section>
         <section id="featured"></section>
     </main>
@@ -66,6 +98,7 @@
 
     </footer>
 
-<script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
