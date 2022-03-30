@@ -68,4 +68,3 @@ srBot.reveal("#home--start", { delay: 700 });
 // About Animation
 srTop.reveal("#about--container1", { delay: 500 });
 srTop.reveal("#about--container2", { delay: 500 });
-srBot.reveal("#about--container3", { delay: 750 });
