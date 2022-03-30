@@ -101,6 +101,9 @@ nav ul li a {
   text-decoration: none;
   color: var(--color2);
 }
+nav ul li a:hover {
+  color: var(--color1);
+}
 
 nav ul li.active a {
   color: var(--color1);
@@ -249,6 +252,16 @@ h1 {
   border: solid 2px var(--color1);
   box-shadow: 0px 0px 15px 3px var(--color1);
   font-size: 0.8rem;
+  animation: animButton 2s infinite;
+}
+
+@keyframes animButton {
+  0% {
+    box-shadow: 0px 0px 15px 3px var(--color1);
+  }
+  50% {
+    box-shadow: 0px 0px 20px 8px var(--color1);
+  }
 }
 
 #home--start::after {
@@ -262,11 +275,8 @@ h1 {
 }
 
 #home--start:hover {
-  box-shadow: 0px 0px 20px 5px var(--color1);
-}
-
-#home--start:active {
-  box-shadow: 0px 0px 15px 3px var(--color2);
+  letter-spacing: 1px;
+  transition: 0.5s;
 }
 
 /*=============== RESPONSIVE HEADER ===============*/
@@ -276,6 +286,14 @@ h1 {
   }
   #home--specifications {
     width: 70%;
+  }
+  #home--shape1 {
+    top: 10vh;
+    left: -20vw;
+  }
+  #home--shape2 {
+    top: 50vh;
+    right: -30vw;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -350,7 +368,7 @@ h1 {
 #about--img {
   width: 100%;
   border-radius: 15px;
-  min-width: 200px;
+  min-width: 180px;
   max-width: 700px;
   display: flex;
 }
@@ -419,6 +437,76 @@ p {
 
 /*=============== RESPONSIVE ABOUT===============*/
 @media (min-width: 425px) and (max-width: 767px) {
+  #about {
+    padding-top: 15vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 20% 23%;
+    row-gap: 10%;
+    column-gap: 10%;
+  }
+  #about--container1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  #about--container2 {
+    grid-row: 1;
+    grid-column: 1;
+    align-items: center;
+    text-align: center;
+  }
+  #about--container3 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  #about--img {
+    max-width: 450px;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  #about {
+    padding-top: 15vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 20% 23%;
+    row-gap: 10%;
+    column-gap: 10%;
+  }
+  #about--container1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  #about--container2 {
+    grid-row: 1;
+    grid-column: 1;
+    align-items: center;
+    text-align: center;
+  }
+  #about--container3 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  #about {
+    padding-top: 15vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 20% 23%;
+    row-gap: 10%;
+    column-gap: 10%;
+  }
+  #about--container1 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  #about--container2 {
+    grid-row: 1;
+    grid-column: 1;
+    align-items: center;
+    text-align: center;
+  }
+  #about--container3 {
+    grid-row: 3;
+    grid-column: 1;
+  }
 }
 
 /*=============== POPULAR===============*/
