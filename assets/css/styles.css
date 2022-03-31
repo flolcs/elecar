@@ -502,7 +502,7 @@ p {
   width: 100%;
 }
 
-#popular--car1 {
+#popular--car {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -548,8 +548,8 @@ p {
   color: var(--color2);
   cursor: pointer;
   border: none;
-  height: 80px;
-  width: 80px;
+  height: 25%;
+  width: 25%;
   border-radius: 1rem 0 1rem 0;
   position: absolute;
   right: 0;
