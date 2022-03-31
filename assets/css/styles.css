@@ -507,14 +507,16 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  height: 40vh;
+  height: 45vh;
   width: 25%;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(36, 36, 36);
   border-radius: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 10vh;
 }
 
 #popular--imgCar {
@@ -536,10 +538,9 @@ p {
 
 #popular--caracteristiquesCar {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 45%;
-  line-height: 25px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .ri-shopping-bag-2-line {
@@ -550,6 +551,21 @@ p {
   height: 80px;
   width: 80px;
   border-radius: 1rem 0 1rem 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.5rem;
+}
+
+.ri-shopping-bag-2-line:hover {
+  background-color: var(--color2);
+  color: black;
+  transition: 0.8s;
+}
+.ri-shopping-bag-2-line:active {
+  background-color: var(--color2);
+  color: black;
+  border: black solid 3px;
 }
 
 /*=============== FEATURED ===============*/
