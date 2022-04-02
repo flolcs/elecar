@@ -49,27 +49,22 @@ const srTop = ScrollReveal({
   //reset: true
 });
 
-const srBot = ScrollReveal({
-  origin: "bottom",
-  distance: "50px",
-  duration: 2000,
-  delay: 400,
-  //reset: true
-});
-
 // Home animation
 
 srTop.reveal("h1");
 srTop.reveal("#home--divCarMission", { delay: 500 });
 srTop.reveal("#home--imgCar", { delay: 600 });
-srBot.reveal("#home--specifications", { delay: 700 });
-srBot.reveal("#home--start", { delay: 700 });
+srTop.reveal("#home--specifications", { delay: 700 });
+srTop.reveal("#home--start", { delay: 700 });
 
 // About Animation
 srTop.reveal("#about--container1", { delay: 500 });
 srTop.reveal("#about--container2", { delay: 500 });
 
-// Initialize Swiper
+// Popular Animation
+srTop.reveal("#popular--title", { delay: 500 });
+
+// Initialize Swiper Popular
 let swiperPopular = new Swiper(".popular--container", {
   loop: true,
   spaceBetween: 30,

@@ -532,6 +532,10 @@ p {
   width: 80%;
   transform: translateX(13%);
 }
+#popular--imgCar:hover {
+  transform: translateY(-10px) translateX(13%);
+  transition: .8s;
+}
 
 #popular--modelCar {
   color: var(--color3);
@@ -557,8 +561,8 @@ p {
   color: var(--color2);
   cursor: pointer;
   border: none;
-  height: 25%;
-  width: 25%;
+  height: 15%;
+  width: 20%;
   border-radius: 1rem 0 1rem 0;
   position: absolute;
   right: 0;
@@ -584,7 +588,130 @@ p {
   background-color: var(--color1) !important;
 }
 
-/*=============== RESPONSIVE POPULAR ===============*/
+/*=============== MORE FEATURES ===============*/
+#more-features {
+  height: 90vh;
+  position: relative;
+}
+
+#more-features--h1 {
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+#more-features--map {
+  height: 80vh;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%) rotate(-20deg);
+}
+#more-features--imgCar {
+  height: 50vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(5vh);
+}
+
+#more-features--texte1 {
+  font-family: "font-3";
+  font-size: 1.5rem;
+  text-align: center;
+}
+#more-features--texte2 {
+  font-family: "font-1";
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#more-features--div1 {
+  background-color: rgba(128, 128, 128, 0.25);
+  backdrop-filter: blur(10px);
+  height: 80px;
+  width: 120px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+#more-features--div2 {
+  background-color: rgba(128, 128, 128, 0.25);
+  backdrop-filter: blur(10px);
+  height: 80px;
+  width: 120px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 55%;
+  top: 30%;
+}
+#more-features--div3 {
+  background-color: rgba(128, 128, 128, 0.25);
+  backdrop-filter: blur(10px);
+  height: 80px;
+  width: 120px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 40%;
+  top: 45%;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  #more-features--div1 {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #more-features--div2 {
+    left: 50%;
+    top: 32.5%;
+    transform: translate(-50%);
+  }
+  #more-features--div3 {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  #more-features--div1 {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #more-features--div2 {
+    left: 50%;
+    top: 32.5%;
+    transform: translate(-50%);
+  }
+  #more-features--div3 {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  #more-features--div1 {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #more-features--div2 {
+    left: 50%;
+    top: 32.5%;
+    transform: translate(-50%);
+  }
+  #more-features--div3 {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
 
 
 /*=============== FEATURED ===============*/
@@ -607,3 +734,5 @@ p {
 }
 @media (max-width: 374px) {
 }
+
+
