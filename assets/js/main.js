@@ -68,3 +68,26 @@ srBot.reveal("#home--start", { delay: 700 });
 // About Animation
 srTop.reveal("#about--container1", { delay: 500 });
 srTop.reveal("#about--container2", { delay: 500 });
+
+// Initialize Swiper
+let swiperPopular = new Swiper(".popular--container", {
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: "auto",
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+    },
+    575: {
+      slidesPerView: 2.2,
+    },
+    1024: {
+      slidesPerView: 3.2,
+    },
+  },
+});

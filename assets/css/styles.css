@@ -497,26 +497,35 @@ p {
   text-align: center;
 }
 
-#popular--container {
-  height: 60vh;
+.popular--container {
+  height: 40vh;
   width: 100%;
+  margin-bottom: 10vh;
+}
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#popular--car {
+.popular--car {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  height: 45vh;
-  width: 25%;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(20, 20, 20);
   border-radius: 30px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  position: relative;
-  top: 10vh;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 
 #popular--imgCar {
@@ -567,6 +576,16 @@ p {
   color: black;
   border: black solid 3px;
 }
+
+.swiper-pagination-bullet {
+  background-color: var(--color2) !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--color1) !important;
+}
+
+/*=============== RESPONSIVE POPULAR ===============*/
+
 
 /*=============== FEATURED ===============*/
 #featured {
