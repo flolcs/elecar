@@ -41,7 +41,7 @@ window.onscroll = () => {
 };
 
 // Animation
-const srTop = ScrollReveal({
+const sr = ScrollReveal({
   origin: "top",
   distance: "50px",
   duration: 2000,
@@ -51,18 +51,26 @@ const srTop = ScrollReveal({
 
 // Home animation
 
-srTop.reveal("h1");
-srTop.reveal("#home--divCarMission", { delay: 500 });
-srTop.reveal("#home--imgCar", { delay: 600 });
-srTop.reveal("#home--specifications", { delay: 700 });
-srTop.reveal("#home--start", { delay: 700 });
+sr.reveal("h1");
+sr.reveal("#home--divCarMission", { delay: 500 });
+sr.reveal("#home--imgCar", { delay: 600 });
+sr.reveal("#home--specifications", { delay: 700 });
+sr.reveal("#home--start", { delay: 700, origin: "bottom" });
 
 // About Animation
-srTop.reveal("#about--container1", { delay: 500 });
-srTop.reveal("#about--container2", { delay: 500 });
+sr.reveal("#about--container1", { delay: 500 });
+sr.reveal("#about--container2", { delay: 500 });
 
 // Popular Animation
-srTop.reveal("#popular--title", { delay: 500 });
+sr.reveal("#popular--title", { delay: 500 });
+
+// More features Animation
+sr.reveal("#more-features--h1", { delay: 500 });
+sr.reveal("#more-features--imgCar", { delay: 500, origin: "bottom" });
+sr.reveal("#more-features--map", { delay: 800 });
+sr.reveal("#more-features--div1", { delay: 1000, origin: "left" });
+sr.reveal("#more-features--div2", { delay: 1000, origin: "right" });
+sr.reveal("#more-features--div3", { delay: 1000, origin: "left" });
 
 // Initialize Swiper Popular
 let swiperPopular = new Swiper(".popular--container", {

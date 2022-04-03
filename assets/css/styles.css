@@ -372,8 +372,8 @@ h1 {
   height: 100vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -408,6 +408,10 @@ p {
   width: 110px;
   color: var(--color2);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
 }
 
 #about--btn:hover {
@@ -485,8 +489,8 @@ p {
   height: 100vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-left: 10vw;
+  margin-right: 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -581,6 +585,12 @@ p {
   border: black solid 3px;
 }
 
+#popular--shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .swiper-pagination-bullet {
   background-color: var(--color2) !important;
 }
@@ -592,6 +602,8 @@ p {
 #more-features {
   height: 90vh;
   position: relative;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 #more-features--h1 {
@@ -716,7 +728,99 @@ p {
 
 /*=============== FEATURED ===============*/
 #featured {
-  height: 100vh;
+  height: 90vh;
+}
+
+#featured--h1 {
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.featured--filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
+
+button {
+  height: 80px;
+  width: 80px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(65, 65, 65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: .4;
+}
+
+button:hover{
+  background-color: var(--color1);
+  opacity: 1;
+}
+button:active{
+  border: solid 1px black;
+}
+
+li {
+  list-style-type: none;
+}
+
+#featured--spanAll {
+  font-size: 1.6rem;
+  color: var(--color2);
+}
+
+#featured--imgFilter {
+  width: 60%;
+}
+
+
+
+
+#featured--imgCar {
+  width: 80%;
+  transform: translateX(13%);
+}
+#featured--imgCar:hover {
+  transform: translateY(-10px) translateX(13%);
+  transition: .8s;
+}
+
+#featured--modelCar {
+  color: var(--color3);
+}
+
+#featured--price {
+  font-size: 1.4rem;
+}
+
+#featured--shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured--gridCars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: rgb(20, 20, 20);
+  border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /*=============== FOOTER ===============*/
