@@ -9,10 +9,7 @@
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -44,7 +41,6 @@
     </div>
     <header>
         <div id="home--shape1"></div>
-        <div id="home--shape2"></div>
         <section id="home">
             <div id="main-header">
                 <h1>Choose The Best Car</h1>
@@ -215,56 +211,65 @@
                 <div class="swiper-pagination"></div>
             </div>
         </section>
-        <section id="more-features">
-            <h1 id="more-features--h1">More Features</h1>
-            <div>
-                <img id="more-features--map" src="./assets/img/map.svg" alt="maps">
-                <img id="more-features--imgCar" src="./assets/img/features.png" alt="car">
-            </div>
-            <div id="more-features--div1">
-                <span id="more-features--texte1">800v</span>
-                <span id="more-features--texte2">Turbo <br> Chargin</span>    
-            </div>
-            <div id="more-features--div2">
-                <span id="more-features--texte1">350</span>
-                <span id="more-features--texte2">Km <br> Range</span>    
-            </div>
-            <div id="more-features--div3">
-                <span id="more-features--texte1">480</span>
-                <span id="more-features--texte2">Km <br> Travel</span>    
-            </div>
-        </section>
         <section id="featured">
             <h1 id="featured--h1">Featured Luxury Cars</h1>
             <div class="featured--containers">
                 <ul class="featured--filters">
                     <li>
-                        <button>
+                        <button class="featured--button" data-filter="all">
                             <span id="featured--spanAll">All</span>
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button class="featured--button" data-filter=".tesla">
                             <img id="featured--imgFilter" src="./assets/img/logo3.png" alt="Tesla">
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button class="featured--button" data-filter=".audi">
                             <img id="featured--imgFilter" src="./assets/img/logo2.png" alt="Audi">
                         </button>
                     </li>
                     <li>
-                        <button>
+                        <button class="featured--button" data-filter=".porsche">
                             <img id="featured--imgFilter" src="./assets/img/logo1.png" alt="Porsche">
                         </button>
                     </li>
                 </ul>
                 <div class="featured--grid">
-                    <div class="featured--gridCars">
+                    <div class="featured--gridCars tesla">
                         <h2>Tesla</h2>
                         <span id="featured--modelCar">Model X</span>
                         <img id="featured--imgCar" src="./assets/img/featured1.png" alt="Model X">
                         <span id="featured--price">$98.900</span>
+                        <a id="featured--shopping" i class="ri-shopping-bag-2-line"></i></a>
+                    </div>
+                    <div class="featured--gridCars tesla">
+                        <h2>Tesla</h2>
+                        <span id="featured--modelCar">Model 3</span>
+                        <img id="featured--imgCar" src="./assets/img/featured2.png" alt="Model 3">
+                        <span id="featured--price">$45.900</span>
+                        <a id="featured--shopping" i class="ri-shopping-bag-2-line"></i></a>
+                    </div>
+                    <div class="featured--gridCars audi">
+                        <h2>Audi</h2>
+                        <span id="featured--modelCar">E-tron</span>
+                        <img id="featured--imgCar" src="./assets/img/featured3.png" alt="E-tron">
+                        <span id="featured--price">$175.900</span>
+                        <a id="featured--shopping" i class="ri-shopping-bag-2-line"></i></a>
+                    </div>
+                    <div class="featured--gridCars porsche">
+                        <h2>Porsche</h2>
+                        <span id="featured--modelCar">Boxster 987</span>
+                        <img id="featured--imgCar" src="./assets/img/featured4.png" alt="Boxster 987">
+                        <span id="featured--price">$126.900</span>
+                        <a id="featured--shopping" i class="ri-shopping-bag-2-line"></i></a>
+                    </div>
+                    <div class="featured--gridCars porsche">
+                        <h2>Porsche</h2>
+                        <span id="featured--modelCar">Panamera</span>
+                        <img id="featured--imgCar" src="./assets/img/featured5.png" alt="Panamera">
+                        <span id="featured--price">$126.900</span>
                         <a id="featured--shopping" i class="ri-shopping-bag-2-line"></i></a>
                     </div>
                 </div>
@@ -274,8 +279,9 @@
     <footer>
 
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/scrollreveal.min.js"></script>
+    <script src="./assets/js/mixitup.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

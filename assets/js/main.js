@@ -64,14 +64,6 @@ sr.reveal("#about--container2", { delay: 500 });
 // Popular Animation
 sr.reveal("#popular--title", { delay: 500 });
 
-// More features Animation
-sr.reveal("#more-features--h1", { delay: 500 });
-sr.reveal("#more-features--imgCar", { delay: 500, origin: "bottom" });
-sr.reveal("#more-features--map", { delay: 800 });
-sr.reveal("#more-features--div1", { delay: 1000, origin: "left" });
-sr.reveal("#more-features--div2", { delay: 1000, origin: "right" });
-sr.reveal("#more-features--div3", { delay: 1000, origin: "left" });
-
 // Initialize Swiper Popular
 let swiperPopular = new Swiper(".popular--container", {
   loop: true,
@@ -92,5 +84,15 @@ let swiperPopular = new Swiper(".popular--container", {
     1024: {
       slidesPerView: 3.2,
     },
+  },
+});
+
+// Mixitup Featured
+let mixerFeatured = mixitup(".featured--grid", {
+  selectors: {
+    target: ".featured--gridCars",
+  },
+  animation: {
+    duration: 300,
   },
 });
