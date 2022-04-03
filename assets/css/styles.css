@@ -303,6 +303,9 @@ h1 {
   #home--specifications {
     width: 70%;
   }
+  h1 {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   #menu {
@@ -319,7 +322,7 @@ h1 {
     width: 70%;
   }
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -360,7 +363,7 @@ h1 {
 
 #about--img {
   border-radius: 10px;
-  min-width: 180px;
+  min-width: 150px;
   max-width: 700px;
   width: 100%;
 }
@@ -418,7 +421,7 @@ p {
 }
 @media (min-width: 425px) and (max-width: 767px) {
   #about {
-    padding-top: 15vh;
+    padding-top: 10vh;
     flex-direction: column;
   }
   #about--container2 {
@@ -427,8 +430,17 @@ p {
     padding-left: 15%;
     padding-right: 15%;
   }
+  #about--container1 {
+    width: 80%;
+  }
   #about--img {
     max-width: 400px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  #about--btn {
+    margin-top: 3vh;
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
@@ -445,6 +457,12 @@ p {
   #about--img {
     max-width: 400px;
   }
+  p {
+    font-size: 0.8rem;
+  }
+  #about--btn {
+    margin-top: 3vh;
+  }
 }
 @media (min-width: 320px) and (max-width: 374px) {
   #about {
@@ -459,6 +477,12 @@ p {
   }
   #about--img {
     max-width: 400px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  #about--btn {
+    margin-top: 3vh;
   }
 }
 
@@ -573,6 +597,23 @@ p {
 }
 .swiper-pagination-bullet-active {
   background-color: var(--color1) !important;
+}
+
+/*=============== RESPONSIVE POPULAR ===============*/
+@media (min-width: 425px) and (max-width: 767px) {
+  #popular--h1 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+  #popular--h1 {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  #popular--h1 {
+    font-size: 1rem;
+  }
 }
 
 /*=============== FEATURED ===============*/

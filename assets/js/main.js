@@ -64,6 +64,10 @@ sr.reveal("#about--container2", { delay: 500 });
 // Popular Animation
 sr.reveal("#popular--title", { delay: 500 });
 
+// Featured Animation
+sr.reveal("#featured--h1", { delay: 800 });
+sr.reveal(".featured--containers", { delay: 500, origin: "bottom" });
+
 // Initialize Swiper Popular
 let swiperPopular = new Swiper(".popular--container", {
   loop: true,
