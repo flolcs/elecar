@@ -280,17 +280,6 @@ h1 {
   transition: 0.5s;
 }
 
-#home--shape1 {
-  height: 400px;
-  width: 400px;
-  position: absolute;
-  top: 20vh;
-  left: -10%;
-  background-color: rgb(28, 45, 70);
-  filter: blur(100px);
-  border-radius: 100px;
-}
-
 /*=============== RESPONSIVE HEADER ===============*/
 @media (min-width: 768px) and (max-width: 1023px) {
   nav {
@@ -518,7 +507,6 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
 }
 
 #popular--imgCar {
@@ -527,7 +515,7 @@ p {
 }
 #popular--imgCar:hover {
   transform: translateY(-10px) translateX(13%);
-  transition: .8s;
+  transition: 0.8s;
 }
 
 #popular--modelCar {
@@ -592,14 +580,10 @@ p {
   height: 90vh;
   padding-top: 5vh;
 }
-.featured--containers {
-  height: 100vh;
-  padding-top: 5vh;
-}
 
 #featured--h1 {
   text-align: center;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 
 .featured--filters {
@@ -612,8 +596,8 @@ p {
 }
 
 .featured--button {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border: none;
   border-radius: 15px;
   background-color: rgb(65, 65, 65);
@@ -621,14 +605,14 @@ p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  opacity: .4;
+  opacity: 0.4;
 }
 
-.featured--button:hover{
+.featured--button:hover {
   background-color: var(--color1);
   opacity: 1;
 }
-.featured--button:active{
+.featured--button:active {
   border: solid 1px black;
 }
 
@@ -637,7 +621,7 @@ li {
 }
 
 #featured--spanAll {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--color2);
 }
 
@@ -650,37 +634,38 @@ li {
   width: 70vw;
   margin-left: 15vw;
   margin-right: 15vw;
-  margin-top: 5vh;
+  margin-top: 2vh;
   height: 55vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   column-gap: 7%;
-  row-gap: 10%;
+  row-gap: 7%;
 }
 
 #featured--imgCar {
-  width: 80%;
-  transform: translateX(13%);
+  width: 65%;
+  transform: translateX(20%);
 }
 #featured--imgCar:hover {
-  transform: translateY(-10px) translateX(13%);
-  transition: .8s;
+  transform: translateY(-10px) translateX(20%);
+  transition: 0.8s;
 }
 
 #featured--modelCar {
   color: var(--color3);
+  font-size: 0.8rem;
 }
 
 #featured--price {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 #featured--shopping {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20%;
-  width: 20%;
+  height: 25%;
+  width: 25%;
 }
 
 .featured--gridCars {
@@ -709,10 +694,17 @@ li {
 
 /*=============== RESPONSIVE FEATURED ===============*/
 @media (min-width: 768px) and (max-width: 1023px) {
-  .featured--grid {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    width: 80%;
+  h2 {
+    font-size: 1.2rem;
+  }
+  #featured--modelCar {
+    font-size: 0.8rem;
+  }
+  #featured--price {
+    font-size: 1rem;
+  }
+  .ri-shopping-bag-2-line {
+    font-size: 1rem;
   }
   .featured--filters {
     margin-left: 20vw;
@@ -720,58 +712,92 @@ li {
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
-  .featured--grid {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 90%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 4%;
-  }
-  .featured--filters {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  #featured--price {
+  h2 {
     font-size: 1rem;
   }
-  h2 {
-    font-size: 1.2rem;
-  }
   #featured--modelCar {
+    font-size: 0.6rem;
+  }
+  #featured--price {
     font-size: 0.8rem;
   }
   .ri-shopping-bag-2-line {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .featured--filters {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+  .featured--grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 7%;
+    row-gap: 5%;
+  }
+  .featured--button {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
-  .featured--grid {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 90%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 4%;
-  }
-  .featured--filters {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  #featured--price {
+  h2 {
     font-size: 1rem;
   }
-  h2 {
-    font-size: 1.2rem;
-  }
   #featured--modelCar {
+    font-size: 0.6rem;
+  }
+  #featured--price {
     font-size: 0.8rem;
   }
   .ri-shopping-bag-2-line {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  .featured--filters {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+  .featured--grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 7%;
+    row-gap: 5%;
+  }
+  .featured--button {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
   }
 }
-
+@media (min-width: 320px) and (max-width: 374px) {
+  h2 {
+    font-size: 1rem;
+  }
+  #featured--modelCar {
+    font-size: 0.6rem;
+  }
+  #featured--price {
+    font-size: 0.8rem;
+  }
+  .ri-shopping-bag-2-line {
+    font-size: 0.8rem;
+  }
+  .featured--filters {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .featured--grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 5%;
+  }
+  .featured--button {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+  }
+}
 
 /*=============== OFFER ===============*/
 
@@ -790,5 +816,3 @@ li {
 }
 @media (max-width: 374px) {
 }
-
-
