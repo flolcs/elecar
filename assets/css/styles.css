@@ -625,7 +625,7 @@ p {
 /*=============== FEATURED ===============*/
 #featured {
   height: 90vh;
-  padding-top: 5vh;
+  padding-top: 10vh;
 }
 
 #featured--h1 {
@@ -969,17 +969,177 @@ li {
 }
 
 /*=============== FOOTER ===============*/
+footer {
+  height: 90vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
 
-/*=============== RESPONSIVE ===============*/
-@media (min-width: 1441px) {
+.footer--container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10vh;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+
+#footer--logo {
+  width: 70px;
+  opacity: .4;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+
+.footer--container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 10%;
+  width: 100%;
 }
+
+#footer--logoTextElecar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "font-3";
+  padding-bottom: 25px;
+}
+
+#footer--favicon {
+  padding-right: 5px;
+  padding-bottom: 25px;
+}
+
+h4 {
+  color: var(--color4);
+  line-height: 45px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h5 {
+  color: var(--color4);
+  line-height: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#footer--ancreLogo {
+  text-decoration: none;
+}
+
+.ri-facebook-fill {
+  color: var(--color4);
+  font-size: 2rem;
+}
+.ri-instagram-line {
+  color: var(--color4);
+  font-size: 2rem;
+}
+.ri-twitter-line {
+  color: var(--color4);
+  font-size: 2rem;
+}
+
+#footer--logoFollow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 25%;
+}
+
+.footer--container3 {
+  padding-bottom: 5vh;
+}
+
+#footer--allRightsReserved {
+  color: var(--color4);
+  font-size: 0.8rem;
+}
+
+/*=============== RESPONSIVE FOOTER ===============*/
 @media (min-width: 425px) and (max-width: 767px) {
+  #footer--logo {
+    width: 40px;
+  }
+  .footer--container2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 10%;
+    width: 100%;
+  }
+  .footer--company {
+    text-align: right;
+  }
+  .footer--followUs {
+    text-align: right;
+  }
+  #footer--logoFollow {
+    margin-right: 0%;
+    margin-left: 20%;
+  }
+  h4 {
+    line-height: 30px;
+  }
 }
 @media (min-width: 375px) and (max-width: 424px) {
+  #footer--logo {
+    width: 40px;
+  }
+  .footer--container2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 10%;
+    width: 100%;
+  }
+  .footer--company {
+    text-align: right;
+  }
+  .footer--followUs {
+    text-align: right;
+  }
+  #footer--logoFollow {
+    margin-right: 0%;
+    margin-left: 20%;
+  }
+  h4 {
+    line-height: 30px;
+  }
 }
-@media (max-width: 374px) {
+@media (min-width: 320px) and (max-width: 374px) {
+  #footer--logo {
+    width: 40px;
+  }
+  .footer--container2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 10%;
+    width: 100%;
+  }
+  .footer--company {
+    text-align: right;
+  }
+  .footer--followUs {
+    text-align: right;
+  }
+  #footer--logoFollow {
+    margin-right: 0%;
+    margin-left: 20%;
+  }
+  h4 {
+    line-height: 30px;
+  }
 }
