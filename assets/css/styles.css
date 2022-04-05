@@ -280,6 +280,27 @@ h1 {
   transition: 0.5s;
 }
 
+.home--shape1 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background-color: var(--color1);
+  border-radius: 50px;
+  filter: blur(200px);
+  top: 25%;
+  left: 0%;
+}
+.home--shape2 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background-color: var(--color1);
+  border-radius: 50px;
+  filter: blur(200px);
+  top: 50%;
+  right: 0%;
+}
+
 /*=============== RESPONSIVE HEADER ===============*/
 @media (min-width: 768px) and (max-width: 1023px) {
   nav {
@@ -287,6 +308,16 @@ h1 {
   }
   #home--specifications {
     width: 70%;
+  }
+  .home--shape1 {
+    height: 200px;
+    width: 200px;
+    filter: blur(150px);
+  }
+  .home--shape2 {
+    height: 200px;
+    width: 200px;
+    filter: blur(150px);
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -306,6 +337,16 @@ h1 {
   h1 {
     font-size: 1.5rem;
   }
+  .home--shape1 {
+    height: 150px;
+    width: 150px;
+    filter: blur(125px);
+  }
+  .home--shape2 {
+    height: 150px;
+    width: 150px;
+    filter: blur(125px);
+  }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   #menu {
@@ -323,6 +364,16 @@ h1 {
   }
   h1 {
     font-size: 1.2rem;
+  }
+  .home--shape1 {
+    height: 150px;
+    width: 150px;
+    filter: blur(125px);
+  }
+  .home--shape2 {
+    height: 150px;
+    width: 150px;
+    filter: blur(125px);
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -345,6 +396,16 @@ h1 {
   #home--carMissionE {
     font-size: 1rem;
   }
+  .home--shape1 {
+    height: 125px;
+    width: 125px;
+    filter: blur(100px);
+  }
+  .home--shape2 {
+    height: 125px;
+    width: 125px;
+    filter: blur(100px);
+  }
 }
 
 /*=============== MAIN ===============*/
@@ -359,6 +420,7 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 #about--img {
@@ -373,7 +435,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  height: 40%;
+  height: 50%;
   padding-left: 10%;
 }
 
@@ -409,6 +471,17 @@ p {
   border: solid 1px var(--color2);
 }
 
+.about--shape1 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background-color: var(--color1);
+  border-radius: 50px;
+  filter: blur(200px);
+  top: 40%;
+  right: 20%;
+}
+
 /*=============== RESPONSIVE ABOUT===============*/
 @media (min-width: 768px) and (max-width: 1023px) {
   #about {
@@ -418,11 +491,18 @@ p {
   #about--container2 {
     align-items: center;
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   #about--img {
-    max-width: 400px;
+    max-width: 350px;
+  }
+  .about--shape1 {
+    height: 200px;
+    width: 200px;
+    filter: blur(150px);
+    top: 60%;
+    right: 35%;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -433,8 +513,8 @@ p {
   #about--container2 {
     align-items: center;
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   #about--container1 {
     width: 80%;
@@ -448,6 +528,13 @@ p {
   #about--btn {
     margin-top: 3vh;
   }
+  .about--shape1 {
+    height: 150px;
+    width: 150px;
+    filter: blur(125px);
+    top: 60%;
+    right: 30%;
+  }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   #about {
@@ -457,8 +544,8 @@ p {
   #about--container2 {
     align-items: center;
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   #about--img {
     max-width: 400px;
@@ -468,6 +555,13 @@ p {
   }
   #about--btn {
     margin-top: 3vh;
+  }
+  .about--shape1 {
+    height: 150px;
+    width: 150px;
+    filter: blur(125px);
+    top: 60%;
+    right: 30%;
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -478,8 +572,8 @@ p {
   #about--container2 {
     align-items: center;
     text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   #about--img {
     max-width: 400px;
@@ -489,6 +583,13 @@ p {
   }
   #about--btn {
     margin-top: 3vh;
+  }
+  .about--shape1 {
+    height: 150px;
+    width: 150px;
+    filter: blur(125px);
+    top: 60%;
+    right: 30%;
   }
 }
 
@@ -526,7 +627,8 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  background-color: rgb(20, 20, 20);
+  background: rgb(61,61,61);
+  background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(0,0,0,1) 100%);
   border-radius: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -625,7 +727,7 @@ p {
 /*=============== FEATURED ===============*/
 #featured {
   height: 90vh;
-  padding-top: 10vh;
+  padding-top: 15vh;
 }
 
 #featured--h1 {
@@ -720,7 +822,8 @@ li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  background-color: rgb(20, 20, 20);
+  background: rgb(61,61,61);
+  background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(0,0,0,1) 100%);
   border-radius: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -772,14 +875,17 @@ li {
     font-size: 1rem;
   }
   .featured--filters {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
   .featured--grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 7%;
     row-gap: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
   }
   .featured--button {
     height: 50px;
@@ -801,14 +907,17 @@ li {
     font-size: 1rem;
   }
   .featured--filters {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
   }
   .featured--grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 7%;
     row-gap: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
   }
   .featured--button {
     height: 50px;
@@ -838,6 +947,9 @@ li {
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 10%;
     row-gap: 5%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: 90vw;
   }
   .featured--button {
     height: 50px;

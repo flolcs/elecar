@@ -52,24 +52,24 @@ const sr = ScrollReveal({
 // Home animation
 
 sr.reveal("h1");
-sr.reveal("#home--divCarMission", { delay: 500 });
-sr.reveal("#home--imgCar", { delay: 600 });
-sr.reveal("#home--specifications", { delay: 700 });
-sr.reveal("#home--start", { delay: 700, origin: "bottom" });
+sr.reveal("#home--divCarMission", { delay: 300 });
+sr.reveal("#home--imgCar", { delay: 400 });
+sr.reveal("#home--specifications", { delay: 500 });
+sr.reveal("#home--start", { delay: 500, origin: "bottom" });
 
 // About Animation
-sr.reveal("#about--container1", { delay: 500 });
-sr.reveal("#about--container2", { delay: 500 });
+sr.reveal("#about--container1", { delay: 200 });
+sr.reveal("#about--container2", { delay: 200 });
 
 // Popular Animation
-sr.reveal("#popular--title", { delay: 500 });
+sr.reveal("#popular--title", { delay: 200 });
 
 // Featured Animation
-sr.reveal("#featured--h1", { delay: 800 });
-sr.reveal(".featured--containers", { delay: 500, origin: "bottom" });
+sr.reveal("#featured--h1", { delay: 500 });
+sr.reveal(".featured--containers", { delay: 200, origin: "bottom" });
 
 // Offer Animation
-sr.reveal(".offer--container1", { delay: 500, origin: "bottom" });
+sr.reveal(".offer--container1", { delay: 200, origin: "bottom" });
 
 // Initialize Swiper Popular
 let swiperPopular = new Swiper(".popular--container", {
