@@ -152,14 +152,16 @@ nav ul li.active a {
 
 /*=============== MAIN HEADER ===============*/
 #main-header {
-  margin-left: 25vw;
-  margin-right: 25vw;
+  padding-left: 25vw;
+  padding-right: 25vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 100vh;
   padding-top: 10vh;
+  background: rgb(13,24,43);
+background: radial-gradient(circle, rgba(13,24,43,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 h1 {
@@ -280,27 +282,6 @@ h1 {
   transition: 0.5s;
 }
 
-.home--shape1 {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  background-color: var(--color1);
-  border-radius: 50px;
-  filter: blur(200px);
-  top: 25%;
-  left: 0%;
-}
-.home--shape2 {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  background-color: var(--color1);
-  border-radius: 50px;
-  filter: blur(200px);
-  top: 50%;
-  right: 0%;
-}
-
 /*=============== RESPONSIVE HEADER ===============*/
 @media (min-width: 768px) and (max-width: 1023px) {
   nav {
@@ -308,16 +289,6 @@ h1 {
   }
   #home--specifications {
     width: 70%;
-  }
-  .home--shape1 {
-    height: 200px;
-    width: 200px;
-    filter: blur(150px);
-  }
-  .home--shape2 {
-    height: 200px;
-    width: 200px;
-    filter: blur(150px);
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -328,24 +299,14 @@ h1 {
     visibility: visible;
   }
   #main-header {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   #home--specifications {
     width: 70%;
   }
   h1 {
     font-size: 1.5rem;
-  }
-  .home--shape1 {
-    height: 150px;
-    width: 150px;
-    filter: blur(125px);
-  }
-  .home--shape2 {
-    height: 150px;
-    width: 150px;
-    filter: blur(125px);
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
@@ -356,24 +317,14 @@ h1 {
     visibility: visible;
   }
   #main-header {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   #home--specifications {
     width: 70%;
   }
   h1 {
     font-size: 1.2rem;
-  }
-  .home--shape1 {
-    height: 150px;
-    width: 150px;
-    filter: blur(125px);
-  }
-  .home--shape2 {
-    height: 150px;
-    width: 150px;
-    filter: blur(125px);
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -384,8 +335,8 @@ h1 {
     visibility: visible;
   }
   #main-header {
-    margin-left: 10vw;
-    margin-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
   #home--specifications {
     width: 90%;
@@ -396,16 +347,6 @@ h1 {
   #home--carMissionE {
     font-size: 1rem;
   }
-  .home--shape1 {
-    height: 125px;
-    width: 125px;
-    filter: blur(100px);
-  }
-  .home--shape2 {
-    height: 125px;
-    width: 125px;
-    filter: blur(100px);
-  }
 }
 
 /*=============== MAIN ===============*/
@@ -414,13 +355,15 @@ h1 {
   height: 100vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   position: relative;
+  background: rgb(13,24,43);
+background: radial-gradient(circle, rgba(13,24,43,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 #about--img {
@@ -471,17 +414,6 @@ p {
   border: solid 1px var(--color2);
 }
 
-.about--shape1 {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  background-color: var(--color1);
-  border-radius: 50px;
-  filter: blur(200px);
-  top: 40%;
-  right: 20%;
-}
-
 /*=============== RESPONSIVE ABOUT===============*/
 @media (min-width: 768px) and (max-width: 1023px) {
   #about {
@@ -496,13 +428,6 @@ p {
   }
   #about--img {
     max-width: 350px;
-  }
-  .about--shape1 {
-    height: 200px;
-    width: 200px;
-    filter: blur(150px);
-    top: 60%;
-    right: 35%;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -528,13 +453,6 @@ p {
   #about--btn {
     margin-top: 3vh;
   }
-  .about--shape1 {
-    height: 150px;
-    width: 150px;
-    filter: blur(125px);
-    top: 60%;
-    right: 30%;
-  }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   #about {
@@ -556,13 +474,7 @@ p {
   #about--btn {
     margin-top: 3vh;
   }
-  .about--shape1 {
-    height: 150px;
-    width: 150px;
-    filter: blur(125px);
-    top: 60%;
-    right: 30%;
-  }
+
 }
 @media (min-width: 320px) and (max-width: 374px) {
   #about {
@@ -583,13 +495,6 @@ p {
   }
   #about--btn {
     margin-top: 3vh;
-  }
-  .about--shape1 {
-    height: 150px;
-    width: 150px;
-    filter: blur(125px);
-    top: 60%;
-    right: 30%;
   }
 }
 
